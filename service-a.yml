@@ -1,31 +1,15 @@
-#eureka:
-#    instance:
-#        statusPageUrlPath: /info
-#        healthCheckUrlPath: /health
-#        prefer-ip-address: true
-#    client:
-#        serviceUrl:
-#            defaultZone: http://localhost:1125/eureka/
-#
-#
-#
-#mybatis:
-#  mapper-locations: classpath:mapper/*.xml
-#  config-location: classpath:mybatis-config.xml
----
-spring.profiles: dev
 
+foo: 1
 eureka:
-  instance:
-    statusPageUrlPath: /info
-    healthCheckUrlPath: /health
-    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://localhost:1125/eureka/
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
 
-success: success
-
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  config-location: classpath:mybatis-config.xml
+spring:
+  profiles:
+    active: dev

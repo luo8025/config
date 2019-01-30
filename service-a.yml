@@ -1,11 +1,10 @@
 foo: 1
 
 spring:
-  application:
-    name: service-a
   profiles:
     active: dev
-
+  application:
+    name: service-a
   rabbitmq:
     host: localhost
     port: 5672
